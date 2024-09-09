@@ -2693,7 +2693,7 @@ store_numeric_date(const char *datestr, struct tds_time *t)
 		return 0;
 
 	if(year_digits == 4)
-		return store_i4digit_year(year, t);
+		return store_4digit_year(year, t);
 	else
 		return store_year(year, t);
 
